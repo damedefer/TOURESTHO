@@ -40,15 +40,39 @@ header{
 nav{
 	width: 100%;
 	height: 12vh;
-	background-color: rgb(0,0,0,.8);
+	background-color: rgba(132,132,132,.4);
+	
+}
+.cadrenav2{
 	position: fixed;
+	width: 10%;
+	height: 10%;
+	margin-left: 90%;
+	background-color:orange;
+
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-top: 20px;
+	
+}
+.cadrenav1{
+	position: fixed;
+	width: 10%;
+	height: 10%;
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-top: 10px;
+	background-color: orange;
+
+	margin-left: 10px;
 }
 
 .vid{
 	position: relative;
 	min-width: 100%;
-	height: 100vh;
-	overflow: hidden;	
+	height: 80vh;
+	overflow: hidden;
+	clear: both;	
 }
 
 
@@ -67,100 +91,137 @@ nav{
 	min-width: 100%;
 	height: 100vh;
 	z-index: -99%;
-	}
+}
+.texte{
+	position: absolute;
+	width: 70%;
+	height: 40%;
+	margin-top: -60%;
+	margin-left: 28%; 
+	color: rgba(255,255,255,.5);
+}
+.texte h2{
+	margin-left: 20%;
+}
+.boutton button{
+	
+	width: 60%
+	height:10%;
+	background-color: rgba(0,0,0,.5);
+
+	color: orange;
+	border-radius: 6px;
+	margin-left: 30px;
+}
+.boutton{
+
+	margin-top: -50%;
+	margin-left: 35%;
+	position: absolute;
+	width: 50%
+	height:20%;
+}
 
 
 .cadreban{
-	width: 30%;
+	width: 25%;
 	height: 10%;
-	background-color: orange;
-	border: 1px solid black;
+	background-color: rgba(0,0,0,.5);
+	
 	float: left;
-	margin-top: -75%;
+	margin-top: -80%;
 	position: absolute;
-	margin-left: 73%;
+	margin-left: 78%;
 	text-align: center;
-	color: white;
-	padding-top: 2%;
-	border-radius: 20px;
+	color: orange;
+	padding-top: 1%;
+	border-radius: 2px;	
 
 }
 
 .cadreban2{
-	width: 26%;
+	width: 20%;
 	height: 10%;
-	background-color: orange;
-	border: 1px solid black;
+	background-color: rgba(0,0,0,.5);
+
+
 	float: left;
-	margin-top: -60%;
+	margin-top: -65%;
 	position: absolute;
-	margin-left: 76%;
+	margin-left: 82%;
+	
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	color: white;
-	padding-top: 2%;
-	border-radius: 20px;
+	color: orange;
+	padding-top: 1%;
+	border-radius: 2px;	
 }
 .cadreban3{
-	width: 30%;
+	width: 21%;
 	height: 10%;
-	background-color: orange;
-	border: 1px solid black;
-	float: left;
-	margin-top: -40%;
-	position: absolute;
-	margin-left: 74%;
-	text-align: center;
-	color: white;
-	padding-top: 2%;
-	border-radius: 20px;
-}
+	background-color:rgba(0,0,0,.5);
 
+	
+	float: left;
+	
+	margin-top: -51%;
+	position: absolute;
+	margin-left: 80%;
+	text-align: center;
+	color: orange;
+	padding-top: 1%;
+	border-radius: 2px;	
+}
+.carousel-item button{
+	width: 5%
+	height:10%;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 20px;
+	color: orange;
+}
 
 .etoile{
 	width: 20%;
 	height: 20%;
-	float: left;
+	
 	color: yellow;
 	margin-left: 40%;
-	margin-top: 0%;
+	margin-top: 15%;
 	margin-bottom: 0%;
 }
 .etoileb{
 	width: 20%;
 	height: 20%;
-	float: left;
 	color: yellow;
 	margin-left: 40%;
-	margin-top: 2%;\
+	margin-top: 2%;
 	margin-bottom: 0%;
 }
 .etoilec{
 	width: 20%;
 	height: 20%;
-	float: left;
+	
 	color: yellow;
 	margin-left: 40%;
-	margin-top: 3%;
+	margin-top: 2%;
 	margin-bottom: 0%;
 }
 .etoiled{
 	width: 20%;
 	height: 20%;
-	float: left;
 	color: yellow;
 	margin-left: 40%;
-	margin-top: 3.5%;
+	margin-top: 3%;
 	margin-bottom: 0%;
 }
 .etoilee{
 	width: 20%;
 	height: 20%;
-	float: left;
+	
 	color: yellow;
 	margin-left: 40%;
-	margin-top: 4%;
+	margin-top: 3%;
 	margin-bottom: 0%;
 }
 
@@ -177,12 +238,13 @@ nav{
 
 
 .cadre{
-	width: 50%;
+	width: 100%;
 	height: 60vh;
 	color: black;
 	margin:-2px;
-	margin-left: 49.5%;
+	margin-left: 0;
 	margin-top: 5px;
+	background-color: black;
 }
 .mini1{
 	margin-bottom: 20px;
@@ -201,10 +263,29 @@ nav{
 	
 	background-color: white;
 	float: right;
-	height: 20vh;
-	width: 100%;
+	height: 60vh;
+	width: 46%;
+	margin-left: 12.5%;
 
 }
+.cadremin1 h5{
+		margin-top: 15%;
+		margin-left: 70px;
+}
+.cadremin11{
+	
+	
+	margin-left:-30%; 
+	height: 20vh;
+	width: 62%;
+	background: white;
+
+}
+.cadre img{
+	width: 130%;
+	height: 60vh;
+}
+
 .cadremin2{
 	
 	background-color: white;
@@ -246,9 +327,6 @@ h6{
 }
 
 
-.stop{
-	clear: both;
-}
 .cadrant{
 	background-color:white;
 	width: 30%;
@@ -402,7 +480,7 @@ h6{
 	width: 50%
 	height:70vh;
 	overflow: hidden;
-	background:linear-gradient( grey .2%,orange);
+	background:linear-gradient( rgba(0,0,0,.5), rgba(255,102,0,.5));
 	border: 2px solid white;
 	
 }
@@ -411,7 +489,7 @@ h6{
 .blanc{
 	width: 100%;
 	height: 62vh;
-	background:linear-gradient(grey .2%,orange);
+	background:linear-gradient(rgba(0,0,0,.5), rgba(255,102,0,.5));
 	margin-top: 15%;
 	margin-left: -13%;
 	transform: rotate(-15deg);
@@ -509,7 +587,7 @@ h6{
 	justify-content: center;
 	filter: brightness(.8);
 	color: yellow;
-	background: linear-gradient(rgba(93,86,182,.2),rgba(255,255,255,.3)),url(image/mya.jpeg);
+	background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.3)),url(image/mya.jpeg);
 	margin-bottom: 50px;
 	border-radius: 6px;
 	background: cover;
@@ -608,7 +686,7 @@ h6{
 	margin-left:40%;
 	padding-bottom:2%;
 	padding-left: 5px;
-	border: 2px solid black;
+	
 	margin-bottom: 3%
 
 }
@@ -693,7 +771,7 @@ h6{
 	margin-left:35%;
 	padding-bottom:2%;
 	padding-left: 3%;
-	border: 1px solid black;
+	
 	margin-bottom: 3%;
 	clear: both;
 }
