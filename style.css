@@ -28,7 +28,7 @@ content{
 }
 header{
 	min-width: 100%;
-	height: 30%;
+	height: 20%;
 	margin-top: 0;
 	margin-bottom: 20px;
 	position: relative;
@@ -37,19 +37,91 @@ header{
 
 /*========================================================================partie1===============================================================*/
 
+
 nav{
 	width: 100%;
-	height: 12vh;
-	background-color: rgba(132,132,132,.4);
+	text-align: center;
+	background-color: rgba(0,100,0,1);
+	
 	
 }
+nav ul{
+	display: inline-flex;
+	list-style: none;
+	color: white;
+
+}
+
+nav ul li{
+	width: 160px;
+	margin: 20px;
+	padding: 20px;;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+.active , nav ul li:hover{
+	background:orange;
+	border-radius: 3px; 
+}
+
+nav .fa{
+	margin-right: 3px;
+}
+.sous-menu-1{
+display: none;
+
+}
+nav ul li:hover .sous-menu-1 {
+	display: block;
+	position: absolute;
+	background:green;
+	margin-left: -15px;
+	margin-top: 15px;
+	
+}
+nav ul li:hover .sous-menu-1 ul{
+	display: block;
+	margin: 10px;
+}
+
+nav ul li:hover .sous-menu-1 ul li{
+	width: 100px;
+	padding: 10px;
+	border-bottom: 1px dotted white;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+nav ul li:hover .sous-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+nav ul li:hover .sous-menu-1 ul li a:hover{
+	columns: yellow;
+	transform: scale(1.1);
+	display: block;
+}
+.banniere{
+	width: 100%;
+	height: 2vh;
+	margin-top: 
+	}
+.banniere .carousel-inner{
+	width: 100%;
+	height: 20vh;
+	margin-bottom: 4%;
+
+}
+
 .cadrenav2{
 	position: fixed;
 	width: 10%;
 	height: 10%;
 	margin-left: 90%;
 	background-color:orange;
-
+	border-radius: 2px;
+	color: white;
 	margin-top: 10px;
 	padding-left: 20px;
 	padding-top: 20px;
@@ -62,9 +134,10 @@ nav{
 	margin-top: 10px;
 	padding-left: 20px;
 	padding-top: 10px;
-	background-color: orange;
-
-	margin-left: 10px;
+	background-color:orange;
+	border-radius: 2px;
+	margin-left: 0px;
+	color: white;
 }
 
 .vid{
@@ -72,7 +145,8 @@ nav{
 	min-width: 100%;
 	height: 80vh;
 	overflow: hidden;
-	clear: both;	
+	clear: both;
+
 }
 
 
@@ -94,34 +168,53 @@ nav{
 }
 .texte{
 	position: absolute;
-	width: 70%;
-	height: 40%;
-	margin-top: -60%;
-	margin-left: 28%; 
-	color: rgba(255,255,255,.5);
+	width: 100%;
+	height: 100vh;
+	margin-top: -81%;
+	 padding-top: 20%;
+	color: rgba(255,255,255,1);
+	font-family: agency fb;
+	font-size: 70px;
+	background: linear-gradient(rgba(123,3,45,.2),rgba(12,3,103,.3));
+
 }
 .texte h2{
-	margin-left: 20%;
-}
-.boutton button{
-	
-	width: 60%
-	height:10%;
-	background-color: rgba(0,0,0,.5);
+	margin-left: 40%;
+	text-shadow: 0 0 30px black;
 
-	color: orange;
+}
+.texte h5{
+	margin-left: 30%;
+	text-shadow: 0 0 30px black;
+
+}
+.boutton a{
+	
+	width: 100%
+	height:10%;
+	background-color:rgba(0,0,0,.5);
+	text-decoration: none;
+	color: white;
 	border-radius: 6px;
-	margin-left: 30px;
+	margin-left: 20px;
+	border:2px solid white;
 }
 .boutton{
 
 	margin-top: -50%;
-	margin-left: 35%;
+	margin-left: 39%;
 	position: absolute;
 	width: 50%
 	height:20%;
 }
+.bouttonette{
 
+	margin-top: 0;
+	margin-left: 35%;
+	color: white;
+	width: 40%
+	height:50%;
+}
 
 .cadreban{
 	width: 25%;
@@ -133,7 +226,7 @@ nav{
 	position: absolute;
 	margin-left: 78%;
 	text-align: center;
-	color: orange;
+	color: white;
 	padding-top: 1%;
 	border-radius: 2px;	
 
@@ -153,7 +246,7 @@ nav{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	color: orange;
+	color: white;
 	padding-top: 1%;
 	border-radius: 2px;	
 }
@@ -169,7 +262,7 @@ nav{
 	position: absolute;
 	margin-left: 80%;
 	text-align: center;
-	color: orange;
+	color: white;
 	padding-top: 1%;
 	border-radius: 2px;	
 }
@@ -187,41 +280,7 @@ nav{
 	
 	color: yellow;
 	margin-left: 40%;
-	margin-top: 15%;
-	margin-bottom: 0%;
-}
-.etoileb{
-	width: 20%;
-	height: 20%;
-	color: yellow;
-	margin-left: 40%;
-	margin-top: 2%;
-	margin-bottom: 0%;
-}
-.etoilec{
-	width: 20%;
-	height: 20%;
-	
-	color: yellow;
-	margin-left: 40%;
-	margin-top: 2%;
-	margin-bottom: 0%;
-}
-.etoiled{
-	width: 20%;
-	height: 20%;
-	color: yellow;
-	margin-left: 40%;
-	margin-top: 3%;
-	margin-bottom: 0%;
-}
-.etoilee{
-	width: 20%;
-	height: 20%;
-	
-	color: yellow;
-	margin-left: 40%;
-	margin-top: 3%;
+	margin-top: 5%;
 	margin-bottom: 0%;
 }
 
@@ -243,20 +302,18 @@ nav{
 	color: black;
 	margin:-2px;
 	margin-left: 0;
-	margin-top: 5px;
+	margin-top: 1px;
 	background-color: black;
-}
-.mini1{
-	margin-bottom: 20px;
 }
 
 .cadrevif{
-	width: 50%;
+	width: 100%;
 	height: 60vh;
-	margin-left: 0%;
-	margin-top: 4%;
-	text-align: center;
-	background: linear-gradient(green,rgba(254,194,0,1),green);
+	color: black;
+	margin-top: 97px;
+	margin-left: 0;
+
+	background: white;
 
 }
 .cadremin1{
@@ -265,27 +322,50 @@ nav{
 	float: right;
 	height: 60vh;
 	width: 46%;
-	margin-left: 12.5%;
+	margin-left: 13.4%;
+	color:orange;
+	padding-top: 5px;
 
 }
-.cadremin1 h5{
-		margin-top: 15%;
-		margin-left: 70px;
+.cadremin1 h2{
+		color: rgb(0,100,0);
+		margin-left: 100px;
 }
+.cadremin1 p{
+	margin-left: 70px;
+}
+
 .cadremin11{
-	
-	
-	margin-left:-30%; 
-	height: 20vh;
-	width: 62%;
-	background: white;
+	background-color: white;
+	float: left;
+	height: 60vh;
+	width: 46%;
+	margin-left:0;
+	color: orange;
+	padding-top: 5px;
 
+}
+.cadremin11 h2{
+	margin-left: 80px;
+	color: rgb(0,100,0);
+}
+.cadremin11 p{
+	margin-left: 0px;
+}
+
+  .bouttonette button{
+	margin-top: 10%;
+	background-color: rgba(0,0,0,.3);
+	color: white;
 }
 .cadre img{
 	width: 130%;
-	height: 60vh;
+	height: 70vh;
 }
-
+.cadrevif img{
+	width: 130%;
+	height: 70vh;
+}
 .cadremin2{
 	
 	background-color: white;
@@ -410,7 +490,7 @@ h6{
 
 	margin-top: 2%;
 	padding-top: 2%;
-	width:100%;
+	width:50%;
 	height: 57vh;
 	margin-left:10%; 
 	background-image: url(image/appart.jpg);
@@ -424,7 +504,7 @@ h6{
 	margin-left: 20px;
 }
 .mini{
-	background: linear-gradient(orange 1%,#CACFD2);
+	background: white;
 	color: white;
 	width: 27%;
 	height: 40vh;
@@ -442,6 +522,7 @@ h6{
 	height: 28vh;
 	margin-top: 10px;
 	margin-left: 10%;
+	border-radius: 2px;
 }
 .mini hr{
 	color:black;
@@ -449,15 +530,15 @@ h6{
 	margin-top: 6px;
 }
  .contenant3{
-	margin-top: 4%;
+	margin-top: 7%;
 	padding-bottom: 5%;
-	width: 70%;
+	width: 90%;
 	height: 50vh;
-	background:linear-gradient(grey 1%,rgba(236,236,236,.7));
+	background:rgba(255,255,255,1);
 	background-repeat: no-repeat;
-	border:7px solid : linear-gradient (rgba(93,86,182,.4),rgba(233,119,236,.4));
+	border:7px solid  white;
 	border-radius: 2px;
-	margin-left: 3%;
+	margin-left: 5%;
 	color: white;
 
 }
@@ -469,20 +550,25 @@ h6{
 }
 
 .contenant2{
-	margin-top: 10%;
-	width: 60%;
-	height: 20vh;
-	z-index: 2;
-	background-repeat: no-repeat;
-}
-.contenant5{
-	margin-top: 20%;
-	width: 50%
-	height:70vh;
-	overflow: hidden;
-	background:linear-gradient( rgba(0,0,0,.5), rgba(255,102,0,.5));
-	border: 2px solid white;
 	
+	width: 70%;
+	height: 30vh;
+	margin-top: 30px;
+	margin-left: 20px;
+	
+}
+
+
+
+.contenant5{
+	margin-top: 5%;
+	width: 100%
+	max-height:50vh;
+	background:rgba(0,100,0,1);
+
+	border: 2px solid white;
+	margin-bottom: 10%;
+
 }
 
 
@@ -552,12 +638,7 @@ h6{
 
 }
 
-.contenant2 img{
-	width: 95%;
-	height: 55vh;
-	margin-left: 2px;
-	border-radius: 3px;
-}
+
 
 .proximite{
 	width: 100%;
@@ -565,22 +646,39 @@ h6{
 	justify-content: center;
 	filter: brightness(.9);
 	color: grey;
-	margin-top: 200px;
+	margin-top: 50px;
 	border-radius: 6px;
+	margin-bottom: 10px;
 }
 .proximite2{
 	width: 100%;
-	height: 70vh;
+	height: 40vh;
 	justify-content: center;
-	filter: brightness(.9);
+	align-items: center;
+	text-align: center;
 	color: grey;
-	
-	padding-top: 2%;
-	margin-top: 20px;
-	margin-bottom: 70px;
-	
+	margin-top: 1%;
+	margin-bottom: 5%;
+	padding-bottom:10%;
+}
+.entour{
+
+	width: 40%;
+	height: 50%;
+	margin-left: 20%;
 
 }
+.entour img{
+	border-radius: 50%;
+	margin-left: 8%;
+}
+.proximite2  h3{
+
+margin-left: 15px;
+margin-top: -65px; 
+}
+
+
 .proximite3{
 	width: 100%;
 	height: 86vh;
@@ -597,7 +695,7 @@ h6{
 .proche img{
 	height: 40vh;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-left: 50px;
 	margin:0;
 }
@@ -608,8 +706,7 @@ h6{
 	width: 90%;
 	height: 60vh;
 	margin-left: 80px;
-	background:;
-	background: 
+	
 }
 .reputer img{
 	height: 40vh;
@@ -637,7 +734,7 @@ h6{
 	
 }
 
-#carouselExampleFade{
+ .proximite3 #carouselExampleControls{
 	float: right;
 
 	width: 40%;
@@ -662,11 +759,7 @@ h6{
 	border-radius: 6px;
 
 }
-.proximite2 h2{
-	text-align: center;
-	
-	border-radius: 6px;
-}
+
 
 .proximite3 h2{
 	text-align: center;
@@ -676,35 +769,35 @@ h6{
 .entete{
 
 	clear: both;
-
 	width: 15%;
 	height: 7vh;
-	background:orange;
+	background:rgb(0,100,0);
 	color: white;
 	border-radius: 20px;
 	font-size: 25px;
-	margin-left:40%;
-	padding-bottom:2%;
-	padding-left: 5px;
+	margin-left:45%;
+	padding-top: 2px;
+	padding-right:3px;
+	margin-top: 9%;
 	
-	margin-bottom: 3%
-
 }
 .contour{
 	width: 50%;
 	height: 50vh;
 	border-radius: 2px;
-	color: yellow;
-	background: linear-gradient(rgba(93,86,182,.2),rgba(233,119,236,.2)),url(image/deido.jpg);
+	color: green;
+	background: orange;
+
 	background: cover;
 	margin-left: 30px;
 	margin-top: 1px;
+
 
 }
 .contour-area{
 	width: 90%;
 	height: 45vh;
-	border: 2px solid white;
+	border: 2px solid orange;
 	margin-top: 15px;
 	margin-left: 20px;
 	justify-content: center;
@@ -712,20 +805,25 @@ h6{
 	display: flex;
 	color: white;
 
+
 }
 .contenu{
 	text-align: center;
+	padding-top: 2%;
 }
 
 .contour1{
 	margin-top: 30%;
 	color: white;
-	margin-left: 45px;
+	margin-left: 10px;
 
+}
+.colstar{
+	color: yellow;
 }
 .contour2{
 	color: orange;
-	margin-left: 59%;
+	margin-left: 19%;
 	margin-top: 18%;
 
 }
@@ -764,17 +862,33 @@ h6{
 
 	width: 30%;
 	height: 7vh;
-	background:orange;
+	background:rgb(0,100,0);
 	color: white;
 	border-radius: 20px;
 	font-size: 25px;
 	margin-left:35%;
 	padding-bottom:2%;
 	padding-left: 3%;
-	
+	margin-top: 8%;
 	margin-bottom: 3%;
 	clear: both;
 }
+.titre2{
+
+	width: 30%;
+	height: 7vh;
+	background:rgb(0,100,0);
+	color: white;
+	border-radius: 20px;
+	font-size: 25px;
+	margin-left:35%;
+	padding-bottom:2%;
+	padding-left: 3%;
+	margin-top: -8%;
+	margin-bottom: 3%;
+	clear: both;
+}
+
 
 .triangle{
 	background: white;
@@ -794,21 +908,6 @@ h6{
 
 }
 
-.titre2{
-
-	width: 30%;
-	height: 7%;
-	transform: rotate(2deg);
-	border-radius: 20px;
-	background:linear-gradient(white,green);
-	border:1px solid white;
-	color: yellow;	
-	margin-left: 35%;
-	margin-bottom: -10px;
-	padding-bottom: 5%;
-
-
-}
 
 
 
@@ -818,7 +917,7 @@ footer{
 	margin-top: 7%;
 	width: 100%;
 	height: 60vh;
-	background:rgba(255,192,0,.5);
+	background:orange;
 	padding-top: 20px;
 	border: 2px solid orange;
 
@@ -830,9 +929,9 @@ footer{
 }
 .cadrefoot{
 	margin-top: 40px;
-	background-color: rgba(41,73,131,1);
+	background-color: rgba(0,100,0,1);
 	width: 80%;
-	height: 60vh;
+	height: 40vh;
 	margin-left: 10%;
 
 }
@@ -846,43 +945,6 @@ footer{
 }
 
 /*---------------------------------------------------------cadre2----------------------------------------------------------------------*/
-.banner-area{
-	width: 50%;
-	height: 40vh;
-	border-radius: 1%;
-	background:url(image/deido.jpg);
-	background-size: cover;
-	background: cover;
-	overflow: hidden;
-
-	color:  rgba(254,194,0,1);
-	border: 2px solid white;
-	border-radius: 10px;
-}
-.flou{
-	width: 70%;
-	height: 25vh;
-	border-radius: 100px;
-	margin-top: 5%;
-	filter: brightness(1);
-	background-image: url(image/chambrefalaise.jpg);
-	border:2px solid white;
-	background-size: cover;
-	margin-left: -62px;
-
-}
-
-
-.content-area{
-	color: rgba(254,194,0,1);
-}
-.iconiq{
-	 color: red;
-	 width:20px;
-	margin-top:5px; 
-	 float: right;
-
-}
 .phrase{
 	width: 50%;
 	height: 5%;
@@ -892,13 +954,9 @@ footer{
 }
 .position{
 	float: right;
-	margin-top: -95px;
+	margin-top: 17px;
 }
-.contour1 p{
-	margin-top: 10px;
-	margin-left: 0px;
-	color: black;
-}
+
 
 .contour p{
 	margin-top: -20px;
@@ -909,44 +967,40 @@ footer{
 	margin-top: -20px;
 	color: black;
 }
-.long {
-	margin-left: 25px;
-	margin-top: 20px;
-	padding-left: 10px;
-	width: 100%;
-	height: 6vh;
-	background-color: rgba(255,255,255,.6);
-	border-radius: 30px;
-	border:3px solid white;
-	color:  rgba(254,194,0,.5) ;
-}
-.long h4{
-	padding-top: 0px;
-	text-align: center;
-}
+
 
 .col{
 	width: 50%;
-	height: 50%;
+	height: 40%;
 	background-color: rgba(254,194,0,.5);
 	border:3px solid rgba(254,194,0,1);
 	float: right;
 	margin-top: 20px;
-	border-radius: 10px;
-	margin-right: 20px;
-	color: grey
+	border-radius: 20px;
+	margin-right: 30px;
+	color: grey;
+	font-size: 25px;
+
+}
+.col:hover{
+	transform: scale(1.3);
 }
 .col1{
 	width: 50%;
-	height: 50%;
+	height: 55%;
 	background-color: rgba(254,194,0,.5);
 	border:3px solid rgba(254,194,0,1);
 	float: right;
 	margin-top: 30px;
-	border-radius: 10px;
+	border-radius: 20px;
 	margin-right: 0px;
-	color: grey
+	color: grey;
+	font-size: 25px;
 }
+.col1:hover{
+	transform: scale(1.3);
+}
+
 .posit{
 	margin-top: -40%;
 	color: green;
@@ -974,7 +1028,7 @@ padding:0 ! important;
 .container{
 	position: relative;
 	width: 370px;
-	background: orange;
+	background: rgba(0,0,0,.5);
 	padding: 20px 30px;
 	border:1px solid white;
 	border-radius: 5px;
@@ -984,6 +1038,7 @@ padding:0 ! important;
 	flex-direction: column;
 	margin-left: 0px;
 	margin-top: 156px;
+	cursor: pointer;
 }
 
 .container .star-widget input{
@@ -992,25 +1047,25 @@ padding:0 ! important;
 
 .star-widget label{
 	
-	color:yellow;
+	color:orange;
 	padding: 0px;
 	float: right;
 
 	transition: all .2s ease;
 }
  input:not(:checked) ~ label:hover,
- input:not(:checked) ~ label:hover ~label
+ input:not(:checked) ~ label:hover ~ label
 {
-	color: red;
+	color: yellow;
 
 }
  input:checked ~ label{
  	color: red;
 }
 
-input #rate-5:checked ~ label{
-	color:green;
-	text-shadow: 0 0 20px green;
+input#rate-5:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px grey;
 }
  form .textarea{
  	height: 100px;
@@ -1086,7 +1141,7 @@ input#rate-5:checked ~ form  header:before{
 form .btn {
 	height:45px;
 	width: 50%;
-	margin: 15px 0;
+	margin: 10px 0;
 }
 
 form .btn button{
@@ -1094,7 +1149,7 @@ height: 100%;
 width: 100%;
 border: 1px solid green;
 background-color: green;
-margin-left: 60%;
+
 color: yellow;
 outline: none;
 font-weight: 500;
@@ -1113,6 +1168,9 @@ form .btn button:hover{
 }
 
 /*--------------------------------------------------------hotel.html--------------------------------------------------------8*/
+
+
+
 .carteyde{
 	
 	width: 30%;
@@ -1121,14 +1179,695 @@ form .btn button:hover{
 	margin-right:120px; 
 	margin-bottom: 50px;
 	position: fixed;
+	
 }
-.transp{
+
+.carteyde2{
+	
+	width: 30%;
+	height: 30%;
+	margin-left: 0;
+	margin-right:120px; 
+	margin-bottom: 50px;
+	position: fixed;
+}
+
+
+.stop{
+	clear: both;
+}
+
+.long {
+	margin-left: 25px;
+	margin-top: 20px;
+	padding-left: 20px;
+	width: 100%;
+	height: 6vh;
+	background-color: rgba(255,255,255,.6);
+	border-radius: 30px;
+	border:3px solid white;
+	color:  rgba(254,194,0,.5) ;
+}
+.long h4{
+	padding-top: 0px;
+	text-align: center;
+	margin-right: 20px;
+
+}
+.stare{
+	margin-top: 10px;
+	margin-left:10px;
+	color: green; 
+}
+.flou{
+	width: 70%;
+	height: 25vh;
+	border-radius: 100px;
+	margin-top: 4%;
+	filter: brightness(1);
+	background:rgba(255,255,255,.7);
+	border:2px solid orange;
+	background-size: cover;
+	margin-left: -90px;
+	clear: both;
+	}
+
+
+
+.bloc1{
+	width: 100%;
+	height: 500vh;
+	margin-top: 10%;
+	background: white;
+}
+.bloc2{
+	width: 100%;
+	height: 500vh;
+	margin-top: 10%;
+	background-color: white;
+}
+.iconiq{
+	 
+	 width:20px;
+	margin-top:5px; 
+	 float: right;
+	 font-size: 20px;
+	 color: black;
+
+}
+.titrette{
+
+	width: 100%;
+	height: 20vh;
+	border-radius: 30%;
+	background:orange;
+	color:white;
+	
+	font-size: 20px;
+	padding-bottom:1%;
+	padding-top: 1%;
+	padding-left: 30%;
+	margin-top: 8%;
+	margin-bottom: 3%;
+	border:1px solid white;
+	margin-left: -9%;  
+	
+}
+ .hart-widget input{
+	display: none;
+}
+
+.hart-widget label{
+	
+	color:orange;
+	padding: 0px;
+	float: right;
+
+	transition: all .2s ease;
+}
+ input:not(:checked) ~ label:hover,
+ input:not(:checked) ~ label:hover ~ label
+{
+	color: orange;
+
+}
+ input:checked ~ label{
+ 	color: orange;
+}
+
+input#rate-1:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-2:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-3:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-4:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-5:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-6:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-7:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-8:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-9:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-10:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-11:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-12:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-13:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-14:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-15:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-16:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-17:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-18:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-19:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+input#rate-20:checked ~ label{
+	color:red;
+	text-shadow: 0 0 40px white;
+}
+
+
+
+
+.galerie{
+	width: 110%;
+	height: 130vh;
+	border-radius: 10%;
+	position: relative;
+	margin-top: -12px;
+	margin-left: -22px;
+}
+.galerie input{
+	display: none;
+}
+.galerie .image{
+	display: none;
+}
+.image.is-visible{
+	display: block;
+}
+.galerie .image1{
+	display: none;
+}
+.image.is-visiblee{
+	display: block;
+}
+
+.atouts{
+	width: 40%;
+	height: 40vh;
+	color: green;
+	margin-top: 5px;
+	border-radius: 20px;
+	margin-left: 5px;
+
+	padding-left: 40px;
+}
+.atouts .boxi{
+	width: 100%;
+	height: 2%;
+	color: green;
+	margin-top: 5%;
+}
+.style{
+	margin-left: 35%;
+	border-radius: 10px;
+	color: green;
+	background-color: orange;
+}
+.situationgeo{
+	float: right;
+	font-size: 25px;
+}
+
+.like:hover{
+	transform: scale(1.4);
+	color: red;
+
+}
+.liki:hover{
+	transform: scale(1.4);
+	color: blue;
+
+}
+
+.col input{
+	margin-left: 20%;
 	width: 50%;
 	height: 30%;
-	background-color:#ECF0F1;
+	border:none;
+	outline: none;
+	text-align: center;
+	background: none;
+	font-size: 20px;
+	font-weight: 800;
+	pointer-events: none;
+	color: grey;
+
+}
+.col1 input{
+	margin-left: 20%;
+	width: 50%;
+	height: 30%;
+	border:none;
+	outline: none;
+	text-align: center;
+	background: none;
+	font-size: 20px;
+	font-weight: 800;
+	pointer-events: none;
+	color: grey;
+
+}
+
+.formulaire{
+	display: none;
+}
+.formulaire .apparaitre{
+	display: block;
+}
+
+
+.menu{
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0,100,0,1);
+	margin-bottom: 10%;
+	
+}
+.menu ul{
+	display: inline-flex;
+	list-style: none;
+	color: white;
+
+}
+
+.menu ul li{
+	width: 160px;
+	margin: 20px;
+	padding: 20px;;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+}
+.active , .menu ul li:hover{
+	background:orange;
+	border-radius: 3px; 
+}
+
+.menu .fa{
+	margin-right: 3px;
+}
+.sous-menu-1{
+display: none;
+
+}
+.sous-menu-2{
+display: none;
+
+}
+
+.menu ul li:hover .sous-menu-1 {
+	display: block;
+	position: absolute;
+	background:green;
+	margin-left: -15px;
+	margin-top: 15px;
+	
+}
+ .sous-menu-1 ul li:hover .sous-menu-2 {
+	display: block;
+	position: absolute;
+	background:orange;
+	margin-left: -15px;
+	margin-top: 15px;
+	
+}
+
+.menu ul li:hover .sous-menu-1 ul{
+	display: block;
+	margin: 10px;
+}
+.sous-menu-1 ul li:hover .sous-menu-2 ul{
+	display: block;
+	margin: 10px;
+}
+
+.menu ul li:hover .sous-menu-1 ul li{
+	width: 100px;
+	padding: 10px;
+	border-bottom: 1px dotted white;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.sous-menu-1 ul li:hover .sous-menu-2 ul li{
+	width: 100px;
+	padding: 10px;
+	border-bottom: 1px dotted white;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu ul li:hover .sous-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+.menu ul li:hover .sous-menu-1 ul li a:hover{
+	columns: yellow;
+	transform: scale(1.1);
+	display: block;
+}
+
+
+/*----------------------------------douala------------------------------------------------------------------------------------------------------------*/
+.transp{
+	width: 50%;
+	height: 8%;
+	background-color:white;
 	margin-top: 5px;
+	border-radius: 10px;
+	border:1px solid green;
+	
+}
+.transp1{
+	width: 50%;
+	height: 8%;
+	background-color:white;
+	margin-top: 3%;
+	border-radius: 10px;
+	border:1px solid green;
+	
+}
+.banner-area{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area2{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area3{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area4{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area5{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area6{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area7{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area8{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area9{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area10{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
 	border-radius: 10px;
 }
 
+
+
+.content-area{
+	color: rgba(254,194,0,1);
+}
+
+
+/*----------------------------------yaounde------------------------------------------------------------------------------------------------------------*/
+
+.transpa{
+	width: 50%;
+	height: 8%;
+	background-color:white;
+	margin-top: 10%;
+	border-radius: 10px;
+	border:1px solid green;
+	
+}
+
+.banner-area11{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area12{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area13{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area14{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area15{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area16{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area17{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area18{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area19{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.banner-area20{
+	width: 60%;
+	height: 40vh;
+	border-radius: 1%;
+	background:url(image/deido.jpg);
+	background-size: cover;
+	background: cover;
+	overflow: hidden;
+
+	color:  rgba(254,194,0,1);
+	border: 2px solid white;
+	border-radius: 10px;
+}
 
 
