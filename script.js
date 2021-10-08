@@ -37,39 +37,19 @@ video3.onended = function(){
   adaptiveHeight: true
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
- 
-
-
 const btn = document.querySelector('button');
 const image =document.querySelector('.image');
 btn.addEventListener('click', () => {
   image.classList.toggle('is-visible');
   
 });
-const btn1 = document.querySelector('button');
-const image1 =document.querySelector('.image1');
-btn1.addEventListener('click', () => {
-  image1.classList.toggle('is-visiblee');
-  
-});
 
 
 
 
-var likecount = document.querySelector('#likecount');
+
+
+var  likecount = document.querySelector('#likecount');
 var dislikecount = document.querySelector('#dislikecount');
 
 var likecounta = document.querySelector('#likecounta');
@@ -79,6 +59,7 @@ var dislikecounta = document.querySelector('#dislikecounta');
 function count(){
   likecount.value = parseInt(likecount.value)+1;
 } 
+
 function count1(){
   dislikecount.value = parseInt(dislikecount.value)+1;
 } 
@@ -95,6 +76,13 @@ $('.plat-prefere-image').slick({
   slidesToShow: 3,
   slidesToScroll: 3,
 
+});
+
+$('.ebergements-proches').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
 });
 
 
