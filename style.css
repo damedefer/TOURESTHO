@@ -114,8 +114,8 @@ header{
  text-shadow: 2px 2px 2px #000;
  text-align: center;
  position: absolute;
- top: 50%;
- left: 50%;
+ top: 30%;
+ left: 40%;
  transform: translate(-50%, -50%);
  width: 100%;
  }
@@ -128,19 +128,7 @@ header{
  	color: rgba(255,255,255,.7);
 }
 
-.titre-ban{
-	color: #ffa500;
-	margin-left: -35%;
-	margin-top: -10%;
 
-}
-.titre-ban2 img{
-	
-	width: 40%;
-	height: 40%;
-	margin-top: -30%;
-	margin-left: -5%;
-}
 
 
  hr{
@@ -170,7 +158,7 @@ header{
 .bandoliere-texte{
 	font-weight: 20px;
 	position: absolute;
-	color: orange;
+	color: white;
 	margin-top: 20%;
 }
 
@@ -195,16 +183,57 @@ video{
 	background-color: rgba(0,0,0,.3);
 	margin-top: -20px;
 }
+.cadre-ban h1{
+	color: white;
+	position: relative;
+	font-weight: 900;
+	font-size: 2em;
+	z-index: 1;
+	overflow: hidden;
+}
+#animation{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30%;
+	height: 50%;
+	z-index: 2;
+	pointer-events: none;
+	/* mix blend permet e rendre le background dune video transparente=======================*/
+	mix-blend-mode: screen;
+}
+.cadre-ban h1:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 57%;
+	height: 100%;
+	
+	animation: animate 3.5s linear forwards;
+	animation-delay: 2s;
+}
+@keyframes animate{
+	0%{
+		left: 20%;
+	}
+	100%{
+		left: -20%;
+	}
+
+}
+.titre-ban{
+	color: #ffa500;
+	margin-left: -35%;
+	margin-top: -10%;
+
+}
+h1 span{
+	color: orange;
+}
 .video1{
 	opacity: 1;
 }
 
-.video2{
-	opacity: 0;
-}
-.video3{
-	opacity: 0;
-}
 /***********************************bare de navigation***************************************/
 .nav-bar a{
 	text-decoration: none;
@@ -244,17 +273,29 @@ video{
 
 }
 .suite{
-	background: orange;
-	border-radius: 20px;
+	
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	margin: auto;
 	color: white;
-	width: 75%;
-	height: 40px;
-	border:1px solid orange;
-	box-shadow: 0 0 10px white
-	margin-left: 46%;
-	justify-content: center;
-	align-items: center;
+	width: 15%;
+	height: 70px;
+	border:2px solid white;
+	box-shadow: 0 0 10px white;
+	padding-top: 1.5%;
+	text-align: center;
+	transition: .3s;
+
 }
+
+.suite:hover{
+	box-shadow: 0 0 20px grey;
+	transform: scale(.9);
+	background-color: rgba(255,255,255,.7);
+	color: rgba(0,0,0,.3);
+}
+
 .suivant{
 	width: 75%;
 	height: 13%;
@@ -270,9 +311,10 @@ video{
 	transition: .4s;
 }
 .suivant:hover{
-	background: white;
+	background: rgba(255,255,255,.3);
 	color: black;
 	transform: scale(.8);
+	box-shadow: 0 0 20px;
 }
 hr{
 	width: 50%;
@@ -398,7 +440,7 @@ hr{
 	width: 30%;
 	height: 20%;
 	margin-left: 10%;
-	margin-top: -10%;
+	margin-top: 10%;
 	display: block;
 	margin: auto;
 
@@ -424,7 +466,7 @@ hr{
 	height: 50%;
 	margin-bottom: -6%;
 	padding-bottom: 6%;
-	background: #ffa500;
+	background: white;
 	position: relative;
 
 }
@@ -437,6 +479,9 @@ hr{
 /*------------------------------------------------------tourisme-------------------------*/
 
 .tourisme-cadre{
+		top: 50%;
+		left: 50%;
+		margin: auto;
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	width: 50%;
@@ -805,19 +850,20 @@ transform: scale(1.2);
 	filter: brightness(.9);
 	background-size: cover;
 	margin-bottom: 5%;
-	color: black;
+	color: white;
 	}
 .appart-photo{
 	width: 30%;
 	padding-bottom: 450px;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(0,0,0,.3);
 	border-radius: 10px;
-	border: 2px solid white;
-	position: relative;
+	border: 2px solid black;
 	float: right;
 	overflow: hidden;
 	box-shadow: 0 0 5px;
 	margin-left: 5%;
+	font-size: 20px;
+	margin-top: 0;
 
 }
 .appart-photo ul{
@@ -866,11 +912,12 @@ transform: scale(1.2);
 /*--------------------------------------------------bon coin__---------------------------------------*/
 .titre{
 
-	width: 30%;
-	height: 7vh;
-	background:#ffa500;
+	width: 27%;
+	height: 12vh;
 	color: white;
-	border-radius: 20px;
+	border:2px solid grey;
+	color: orange;
+	padding-top: 1.5%;
 	font-size: 25px;
 	margin-left:35%;
 	padding-bottom:2%;
@@ -996,7 +1043,8 @@ footer{
 	
 	position: relative;
 	font-weight: 400px;
-	
+	margin-top: 40px;
+	overflow: hidden;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
@@ -1014,7 +1062,7 @@ hr{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	border: 2px solid orange;
+	border: 2px solid white;
 }
 .foot-background{
 	background-size: cover;
@@ -1022,17 +1070,17 @@ hr{
 	position: absolute;
 	left: 0;top: 0;right: 0;bottom: 0;
 	filter: brightness(1);
+	overflow: hidden;
 }
 .foot-content{
 	position: absolute;
-	padding: 24px;
-	
+	padding: 26px;
+	padding-top: 80px;
 	height: 50%;
 	text-decoration: none;
 	transition: .3s;
 	text-align: center;
-	margin-top: 40px;
-
+	
 }
 
 
@@ -1042,11 +1090,11 @@ hr{
 	
 }
 .contour-icon{
-	background-color: orange;
+	border: 2px solid white;
 	width: 220px;
 	height: 130px;
 	border-radius: 3px;
-	padding-top: 15%;
+	padding-top: 18%;
 	margin-left: 120%;
 	transform: rotate(30deg);
 }
@@ -1058,9 +1106,20 @@ hr{
 .bande{
 	width: 180%;
 	height: 80px;
-	background: rgba(0,0,0,.5);
+	color: orange;
 	margin-top: 60px;
 	padding-top: 25px;
+	border: 2px solid white;
+}
+.designfoot{
+	background-color: white;
+	width: 350px;
+	height: 230px;
+	border:2px solid orange;
+	border-radius: 50px;
+	margin-left: 30%;
+	position: absolute;
+	margin-top: -15%;
 }
 
 
@@ -1078,6 +1137,7 @@ hr{
 	width: 370px;
 	background: white;
 	padding: 20px 30px;
+
 	border:1px solid white;
 	border-radius: 5px;
 	display: flex;
