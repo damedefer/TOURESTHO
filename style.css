@@ -35,7 +35,7 @@ body {
     font-size: 18px;
     color: hsl(257, 5%, 44%);
     font-weight: 500;
-    background:url(image/backgroundc.jpg);
+    background-color: rgb(217,217,217);
     padding: 0px;
     margin: 0px;
 
@@ -63,9 +63,10 @@ h6{
 header{
 	min-width: 100%;
 	height: 20%;
-	margin-top: 0;
+	margin-top:2em ;
 	margin-bottom: 20px;
 	position: relative;
+
 
 }
 /********* VISIBILTE des textes de la baniere******************************************************************/
@@ -144,12 +145,14 @@ header{
 	margin-left: 25%;
 	text-align: center;
 	padding-top: 2em;
-	margin-top: 3em;
-	margin-bottom: 5em;
+	margin-top: 6em;
+	margin-bottom: 7em;
+	font-size: 25px;
 	
 }
 .bandoliere h1{
 	color: orange;
+	font-size: 40px;
 }
 .bandoliere h3{
 	color: orange;
@@ -161,7 +164,7 @@ header{
 
 video{
 	width: 100%;
-	height: 100%;
+	height: 90%;
 	position: absolute;
 	object-fit: cover;
 	transition: all 1.2s linear;
@@ -184,7 +187,7 @@ video{
 	background-color: rgba(0,0,0,.3);
 	margin-top: -20px;
 }
-
+	
 
 .titre-ban{
 	color: #ffa500;
@@ -192,35 +195,59 @@ video{
 	margin-top: -10%;
 
 }
+.barre-navigation{
+	width: 100%;
+	height: 6em;
+	background: url(image/backgroundc.jpg);
+}
 .cadre-ban h1{
 	
 	position: relative;
 	font-weight: 600;
 	font-size: 3em;
-	color: rgba(255,255,255,.5);
-	
+	color: orange;
+	text-shadow: 1px 1px 1px solid black;
 	-webkit-text-stroke:.2vw rgba(255,255,255,.4); 
 	
 }
+.cadre-ban h5{
+	
+	
+	font-weight: 600;
+	font-size: 1em;
+	color: rgba(255,255,255,.6);
+	text-shadow: 1px 1px 1px solid black;
+
+	
+}
+
 .titrage{
 	width: 26%;
-	height: 10%;
-	margin-top: 3em;
-	
+	height: 20%;
+	margin-top: -42px;
+	padding-top: -1em;
 	margin-left: 0;
-	margin-bottom: 5%;
-	
+	margin-bottom: 1em;
 	color: orange;
 	text-shadow: 1px 1px 1px black;
 }
+.titrage h1{
+	font-size: 50px;
+	font-weight: 600;
+	position: relative;
+	color: rgba(255,255,255,.5);
+	margin-top: -6px;
+	-webkit-text-stroke:.2vw rgba(255,255,255,.4); 
 
-.cadre-ban h1:before{
+}
+
+.titrage h1:before{
 	content: attr(data-text);
 	position: absolute;
-	top: 0;
+	top: 25px;
 	left: 0;
 	width: 0;
-	height: 100%;
+	height: 1em;
 	color: orange;
 	-webkit-text-stroke:0vw white;
 	border-right: 3px solid orange;
@@ -233,7 +260,7 @@ video{
 		width: 0;
 	}
 	70%,90%{
-		width: 46%;
+		width: 73%;
 	}
 
 }
@@ -245,21 +272,18 @@ h1 span{
 /***********************************bare de navigation***************************************/
 	
 .nav-bar{
-	width: 40%;
-	height: 40%;
-	margin-top: -20px;
-	margin-left: 60%;
-	position: absolute;
+	width: 20%;
+	height: 20%;
+	margin-left: 80%;
 	cursor: pointer;
 	transition: all .3s;
+	padding-top: 1em;
 }
 .nav-bar a{
 	color:white;
 	text-decoration: none;
 	font-size: 20px;
-	margin-left: 10px;
-	
-
+	margin-left: 15px;
 }
 .nav-bar a:hover{
 	transform: scale(.9);
@@ -342,11 +366,12 @@ hr{
 .resto-cadre{
 	width: 100%;
 	padding-bottom: 50em;
-	color: white;
+	text-shadow: grey;
 	object-fit: cover;
 	border-radius: 10px;
 	margin-top:10%;
 	margin-bottom: 15em;
+	
 	
 }
 .resto-cadre h2{
@@ -360,7 +385,7 @@ hr{
 	height: 410px;
 	margin-top: 1%;
 	margin-left: 2em;
-	margin-bottom: 3em;
+	margin-bottom: 3em; 
 		
 }
 .resto-slide{
@@ -383,6 +408,7 @@ hr{
 	margin-bottom: 3%;
 	margin-top: 2%;
 	border:4px solid white;
+
 }
 .mangeuse-background{
 	background-size: cover;
@@ -429,19 +455,19 @@ hr{
 	width: 70%;
 	height: 60px;
 	margin-left: 34%;
-	margin-bottom: 70px;
+	margin-bottom: 9em;
 	
-	margin-top: 7%;
+	margin-top: 7em;
 
 }
 .texte-transition-centre h5{
-	font-size: 20px;
-	color: white;
+	font-size: 25px;
+	color: grey;
 	margin-left: 4.5%;
 }
 .texte-transition-centre h6{
-	font-size: 15px;
-	color: white;
+	font-size: 25px;
+	
 }
 .texte-transition-centre h3{
 	font-size: 30px;
@@ -624,7 +650,9 @@ hr{
 	text-shadow: 0 0 5px grey;
 }
 .vid-cascade{
-	background-color: white;
+	background: linear-gradient(to right, orange 50%, white 50% 100%);
+	border-radius: 20px;
+
 	width: 100%;
 	height: 46em;
 }
@@ -781,7 +809,7 @@ transform: scale(1.2);
 .slider-for{
 	width: 90%;
 	height: 20px;
-	margin-left: 5%;
+	margin-left: 2%;
 	margin-top: 3%;
 }
 .slider-for img{
@@ -794,7 +822,7 @@ transform: scale(1.2);
 .slider-nav{
 	width: 40em;
 	height: 50em;
-	margin-top: 4em;
+	margin-top: 6em;
 	margin-left: -15em;
 	
 }
@@ -977,6 +1005,7 @@ transform: scale(1.2);
 	margin-left: 4em;
 	color: white;
 	margin-top: 2.5em;
+	
 }
 .appartements img{
 	width: 11em;
@@ -984,7 +1013,6 @@ transform: scale(1.2);
 	border-radius: 120px;
 	border:3px solid orange;
 }
-
 .appart-photo ul{
 	list-style: none;
 }
@@ -1050,18 +1078,21 @@ transform: scale(1.2);
 /*--------------------------------------------------bon coin__---------------------------------------*/
 .titre{
 
-	width: 100%;
-	height: 14em;
-	
-	background:rgba(255,255,255,.8);
+	width: 30%;
+	height: 3em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background:linear-gradient( to bottom left, orange 45%,  rgba(255,255,255,.8) 45% 50%);
 	border:5px solid orange;
-	margin-bottom: 3em;
+	margin-bottom: 6em;
 	color: white;
-	padding-top: 6em;
+	padding-top: 1em;
+	margin-top:4em;
 	text-shadow: 1px 1px 1px black;
 	font-size: 25px;
-	text-align: center;
-
+	transform: rotate(-15deg);
+	
 }
 .titre h2{
 	font-size: 50px;
